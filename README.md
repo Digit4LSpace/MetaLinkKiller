@@ -6,6 +6,14 @@ This program was created to kill the existing OVR processes after shutting down 
 
 Once opened it only exists in the System Tray
 
+## Requirements
+- Windows 10 or later (64-bit or ARM64)
+- [.NET 8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (Windows will prompt you to install if missing)
+
+## Notes
+
+- If you move or update the exe, disable and re-enable "Run at startup" from the tray menu to update the path.
+
 ## Contents in the System Tray
 
 - Kill OVR Process
