@@ -18,7 +18,7 @@ namespace MetaLinkKiller
             trayIcon.ShowBalloonTip(3000, "MetaLinkKiller", "Initialized! Check the system tray.", ToolTipIcon.Info);
             ContextMenuStrip menu = new ContextMenuStrip();
             menu.Items.Add("Kill OVR Process", null, (s, e) => KillQuestProcesses(trayIcon));
-            menu.Items.Add("About", null, (s, e) => MessageBox.Show("MetaLinkKiller\n\nKills Meta Horizon Link-related processes after app shutdown to keep your data away from the pesky corporations.\n\nIf you find any bugs, report in Issues on GitHub\n\nCreated by Digit4lSpace, 2026", "About MetaLinkKiller", MessageBoxButtons.OK, MessageBoxIcon.Information));
+            menu.Items.Add("About", null, (s, e) => MessageBox.Show("MetaLinkKiller\n\nKills Meta Horizon Link-related processes after app shutdown to keep your data away from the pesky corporations.\n\nIf you find any bugs, report in Issues on GitHub\n\nCreated by Digit4LSpace, 2026", "About MetaLinkKiller", MessageBoxButtons.OK, MessageBoxIcon.Information));
             menu.Items.Add("Exit", null, (s, e) => Application.Exit());
             trayIcon.ContextMenuStrip = menu;
             var autoStartItem = new ToolStripMenuItem("Run at startup");
@@ -54,7 +54,7 @@ namespace MetaLinkKiller
             if (killed > 0)
                 trayIcon.ShowBalloonTip(3000, "MetaLinkKiller", "All processes killed!", ToolTipIcon.Info);
             else
-                trayIcon.ShowBalloonTip(3000, "MetaLinkKiller", "No OVR processes found.", ToolTipIcon.Info);
+                trayIcon.ShowBalloonTip(3000, "MetaLinkKiller", "No OVR processes found.", ToolTipIcon.Warning);
         }
         static bool IsAutoStartEnabled()
         {
